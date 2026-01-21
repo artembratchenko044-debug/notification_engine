@@ -33,7 +33,7 @@ def handle_supabase_event():
     
     # Extract data from the new row (adjust keys to match your table columns)
     user_email = record.get('email')
-    user_name = record.get('full_name', 'User')
+    user_name = record.get('user_id', 'Valued Customer')
     event_name = record.get('event_name', 'New Activity')
 
     if not user_email:
