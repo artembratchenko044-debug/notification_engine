@@ -14,7 +14,7 @@ app = Flask(__name__)
 SENDGRID_API_KEY = os.environ.get('SENDGRID_API_KEY')
 ONESIGNAL_API_KEY = os.environ.get('ONESIGNAL_API_KEY')
 # Your verified sender email in SendGrid
-FROM_EMAIL = 'your-verified-sender@email.com' 
+FROM_EMAIL = 'artem.bratchenko044@gmail.com' 
 
 # Your new Template IDs
 SENDGRID_TEMPLATE_ID = 'd-d11db0e0e1a745b29ad37f512cca3f3c'
@@ -108,3 +108,5 @@ if __name__ == "__main__":
     # Render uses the PORT env var
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port)
+
+
